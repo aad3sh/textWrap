@@ -1,0 +1,26 @@
+.apple-logo {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.text-wrap-balance.text-wrap-toggle {
+    text-wrap: balance;
+}
+
+#textWrapContainer {
+    border: 2px solid #ddd;
+    padding: 20px;
+    max-inline-size: 50ch;
+}

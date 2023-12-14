@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Wrap: Balance Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="apple-logo.png" alt="Apple Logo" class="apple-logo">
+    <div class="container">
+        <h1>
+            Text Wrap: Balance Demo
+        </h1>
+        <p>
+            Imagine a webpage as a container, and the text on that page as a stream of words. Sometimes, when the container is not big enough, words may get cut off at the edge, making it hard to read. This is where the <code>text-wrap</code> property comes in.
+        </p>
+
+        <p>
+            The <code>text-wrap</code> property is like a magician that helps make text look good inside its container. In our magic show (or demo), we have a special trick called "balance." It tries to spread the words evenly across the container, making everything look neat and tidy. However, not all web browsers are fans of this trick, so it might not work everywhere.
+        </p>
+
+        <p>
+            Here's how the browser goes about finding the best-balanced wrapping solution:
+
+            <ol>
+                <li><strong>Understanding the Container:</strong> The browser first understands the dimensions of the text container – how wide it is and how much space is available.</li>
+                <li><strong>Breaking Points:</strong> It identifies natural breaking points in the text, typically spaces between words. These breaking points are potential locations where the text can wrap to the next line.</li>
+                <li><strong>Optimizing for Balance:</strong> When the <code>text-wrap</code> property is set to "balance," the browser works to distribute words across lines in a way that minimizes unevenness. It aims for a visually pleasing distribution of text, so no line stands out as significantly longer or shorter than others.</li>
+                <li><strong>Responsive Adjustments:</strong> The browser may also adjust the wrapping dynamically based on the available space. This is particularly important for responsive design, where the layout needs to adapt to different screen sizes.</li>
+            </ol>
+        </p>
+
+        <p>
+            Now, my demo has a box with a bunch of text inside. At first, the text uses the "balance" trick, making sure lines of text are all nicely balanced. Click the "Toggle Text Wrap" button, and you'll see the magic happening – the text will switch between being neatly balanced and just flowing naturally.
+        </p>
+
+        <h2 id="textWrapStatus">Text Wrap: Balance</h2>
+
+        <div class="text-wrap-balance text-wrap-toggle" id="textWrapContainer">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec ex non metus auctor luctus vel non urna. Duis vehicula vestibulum fermentum. Donec sit amet aliquam eros, sit amet interdum elit. Nullam aliquet, arcu et aliquet facilisis, nisi nisl suscipit justo, non vulputate orci sem eu libero.</p>
+            <p>Integer vel tincidunt elit. Aliquam fermentum ultricies efficitur. Sed sollicitudin lacus a aliquet tincidunt. Ut euismod nec lacus auctor vestibulum. Vivamus in justo sit amet erat malesuada interdum. Sed bibendum urna nec lacus congue, sit amet cursus turpis ullamcorper.</p>
+            <p>Quisque vel odio et nulla tempus facilisis. Fusce vehicula varius efficitur. Proin ut augue vel velit congue suscipit nec vel massa. In tincidunt metus ut felis tempus hendrerit. Fusce non ex vitae tortor laoreet malesuada sit amet vel elit.</p>
+        </div>
+
+        <button onclick="toggleTextWrap()">Toggle Text Wrap</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
